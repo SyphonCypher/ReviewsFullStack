@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ReviewsSite.Models.Review>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Warhammer 40K Characters Review</title>
+    <link href="~/IndexStyle.css" rel="stylesheet" />
+</head>
+<body align="center">
+    <h1>Warhammer 40,000 Character Reviews</h1>
+
+    @foreach (var review in Model)
+    {
+        <section class="Links">
+            <a href="/Home/Details/@review.Id">
+                @review.Name
+            </a>
+        </section>
+    }
+
+</body>
+</html>
