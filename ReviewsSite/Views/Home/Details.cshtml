@@ -15,7 +15,9 @@
     <div>
         <h1>@Model.Name</h1>
         <h2>Category</h2>
-        <h3>@Model.Category</h3>
+        <a href="/Category/Index">
+            <h3>@Model.Category.Name</h3>
+        </a>
         <img src="@Model.Image">
         <h2>Summary</h2>
         <p>@Model.Descrip</p>
