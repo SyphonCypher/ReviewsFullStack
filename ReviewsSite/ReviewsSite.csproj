@@ -5,12 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20181022185825_InitialMigra.cs" />
+    <Compile Remove="Migrations\20181022185825_InitialMigra.Designer.cs" />
     <Compile Remove="Migrations\20181022192809_CategoryMigra.cs" />
     <Compile Remove="Migrations\20181022192809_CategoryMigra.Designer.cs" />
     <Compile Remove="Migrations\20181022193358_AddedCategoryMigraRebirth.cs" />
     <Compile Remove="Migrations\20181022193358_AddedCategoryMigraRebirth.Designer.cs" />
     <Compile Remove="Migrations\20181022194237_AddedSeedForCategoryMigra.cs" />
     <Compile Remove="Migrations\20181022194237_AddedSeedForCategoryMigra.Designer.cs" />
+    <Compile Remove="Migrations\20181022200804_SeedDataMigra.cs" />
+    <Compile Remove="Migrations\20181022200804_SeedDataMigra.Designer.cs" />
+    <Compile Remove="Migrations\20181101203013_RowboatAndMortyArePrimarchsMigra.cs" />
+    <Compile Remove="Migrations\20181101203013_RowboatAndMortyArePrimarchsMigra.Designer.cs" />
+    <Compile Remove="Migrations\20181101203925_StopBreakingMigra.cs" />
+    <Compile Remove="Migrations\20181101203925_StopBreakingMigra.Designer.cs" />
+    <Compile Remove="Migrations\20181101204204_ThirdTimeTheCharmMigra.cs" />
+    <Compile Remove="Migrations\20181101204204_ThirdTimeTheCharmMigra.Designer.cs" />
+    <Compile Remove="Migrations\20181101205300_MortyMigra.cs" />
+    <Compile Remove="Migrations\20181101205300_MortyMigra.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

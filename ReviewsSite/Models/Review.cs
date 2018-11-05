@@ -15,5 +15,7 @@ namespace ReviewsSite.Models
 
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
+
+        public virtual List<ReviewTag> ReviewTags { get; set; }
     }
 }

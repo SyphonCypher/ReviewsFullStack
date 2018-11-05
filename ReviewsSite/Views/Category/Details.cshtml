@@ -11,6 +11,14 @@
     <title>Details</title>
 </head>
 <body>
-    <p>@Model.Id</p>
+    <p>@Model.Name</p>
+    @foreach (var review in Model.Reviews)
+    {
+        <section class="Links">
+            <a href="/Home/Details/@review.Id">
+                @review.Name
+            </a>
+        </section>
+    }
 </body>
 </html>

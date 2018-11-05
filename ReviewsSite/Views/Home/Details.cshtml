@@ -10,19 +10,41 @@
     <meta name="viewport" content="width=device-width" />
     <title>Reviews</title>
     <link href="~/DetailsStyle.css" rel="stylesheet" />
+    <script>
+        var reviewId = @Model.Id;
+    </script>
+    <script src="~/JS/Comment.js"></script>
+    <!--
+    <script>
+       document.addEventListener('DOMLoaded', function() {
+
+        });
+    </script>-->
 </head>
 <body align="center">
     <div>
         <h1>@Model.Name</h1>
         <h2>Category</h2>
-        <a href="/Category/Index">
+        <a href="/Category/Details/@Model.CategoryId">
             <h3>@Model.Category.Name</h3>
         </a>
+        <h3>Tag</h3>
+        <ul id="tags">
+
+        </ul>
         <img src="@Model.Image">
         <h2>Summary</h2>
         <p>@Model.Descrip</p>
         <h2>Review</h2>
         <p>@Model.Content</p>
+        <h2>Comments</h2>
+        <ul id="comments">
+            <!-- Use JS to add LIs here-->
+        </ul>
+        <textarea id="new-comment"></textarea>
+        <button id="save-comment">Save Comment</button>
+        <a href="/Home/Index">Home</a>
+        <a href="/Category/Index">Categories</a>
     </div>
 </body>
 </html>

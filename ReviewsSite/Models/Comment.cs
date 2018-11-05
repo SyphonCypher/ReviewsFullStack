@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace ReviewsSite.Models
 {
-    public class Category
+    public class Comment
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-
-        public virtual List<Review> Reviews { get; set; }
+        public string Text { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public int ReviewId { get; set; }
     }
 }
